@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @EnableAutoConfiguration
 @ComponentScan
 public class ThymeLeafExample {
-	public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
         SpringApplication.run(ThymeLeafExample.class);
     }
 }

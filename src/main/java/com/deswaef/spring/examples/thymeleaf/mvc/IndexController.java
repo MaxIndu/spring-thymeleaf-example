@@ -7,21 +7,18 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-/**
- * User: Quinten
- * Date: 25-4-2014
- * Time: 12:52
- *
- * @author Quinten De Swaef
- */
 @Controller
-@RequestMapping(value = "/")
 public class IndexController {
     private Log LOG = LogFactory.getLog(IndexController.class);
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(ModelMap map) {
-        return "main";
+        return "test";
+    }
+
+    @RequestMapping(value = "/prop", method = RequestMethod.GET)
+    public String prop(ModelMap map) {
+        return "test";
     }
 
 }

@@ -14,6 +14,6 @@ public class ThymeLeafExampleTest {
 
     @Test
     public void startUp() {
-        
+
     }
 }
